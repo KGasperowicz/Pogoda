@@ -76,10 +76,10 @@ const media = {
 
 }
 
-for (let k of media) {
+for (let k of Object.keys(media)) {
     media[k].backgrounds.forEach(function(img){
         new Image().src = img; 
-        // caches images, avoiding white flash between background replacements
+       
     });
 }
 
