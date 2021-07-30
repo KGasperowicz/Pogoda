@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* html {
+  /* background: url("backgrounds/sunny1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-blend-mode: darken;
+
+  transition: 3s; */
+/* }
+html * {
+  transition: none;
+} */
+
+body {
+  /* background: url("backgrounds/sunny1.jpg"); */
+  transition: 3s;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Georama", sans-serif;
+  color: #fff;
+  font-size: 16px;
+}
+
+.wrapper {
+  width: 400px;
+  min-height: 600px;
+  background: rgba( 18, 18, 18, 0.3 );
+  
+  backdrop-filter: blur( 12.0px );
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 30px;
+}
+@media screen and (max-width: 590px) {
+    .wrapper {
+        width: 80%;
+        min-height: 500px;
+        padding: 20px 10px;
+    }
+    .bottom {
+        font-size: 12px;
+    }
+    input::placeholder {
+        font-size: 12px;
+      }
+}
+.search {
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.input {
+  width: 100%;
+}
+input {
+  background: none;
+  border: none;
+  color: #fff;
+}
+input::placeholder {
+  color: #fff;
+  font-family: "Georama", sans-serif;
+}
+input:focus-visible {
+    outline: none;
+  }
+button {
+  border: none;
+  background: none;
+  padding: 5px;
+  transition: 0.3s;
+}
+button:hover {
+    background: rgba( 18, 18, 18, 0.1 );
+   
+}
+button:active {
+    
+    transform: translateY(1px);
+}
+button img {
+  width: 20px;
+}
+.warning {
+  margin-top: 5px;
+  font-size: 12px;
+  color: tomato;
+}
+
+.icon {
+    width: 140px;
+    height: 140px;
+    margin-left: -30px;
+}
+.main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 20px;
+}
+.icontemp {
+    display: flex;
+    align-items: center;
+}
+p.temp {
+    font-size: 36px;
+}
+h1 {
+    font-size: 40px;
+    display: block;
+    font-weight: 200;
+    padding-bottom: 10px;
+}
+h2 {
+    font-size: 20px;
+    display: block;
+    font-weight: 100;
+}
+.bottom {
+    width: 100%;
+}
+.more-info {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 100;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+}
+.raininfo {
+    display: flex;
+    flex-direction: column;
+    
+}
+.humidityinfo {
+    display: flex;
+    flex-direction: column;
+   
+}
+p.humidity {
+    padding-top: 10px;
+}
+p.wind {
+    padding-top: 10px;
+}
+p.airpressure {
+    padding-top: 10px;
+}
+
+.sunsetsunrise {
+    font-weight: 200;
+    width: 100%;
+    padding-top: 20px;
+}
+.sunrise-info {
+    display: flex;
+}
+.sunset-info {
+    display: flex;
+}
+.sunrise {
+    padding-left: 10px;
+}
+.sunset {
+    padding-left: 10px;
+}
+
