@@ -79,6 +79,12 @@ input::placeholder {
 input:focus-visible {
     outline: none;
   }
+  input:focus,
+  select:focus,
+  textarea:focus,
+  button:focus {
+      outline: none;
+  }
 button {
   border: none;
   background: none;

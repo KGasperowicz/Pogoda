@@ -76,12 +76,21 @@ const media = {
 
 }
 
+for (let k of media) {
+    media[k].backgrounds.forEach(function(img){
+        new Image().src = img; 
+        // caches images, avoiding white flash between background replacements
+    });
+}
+
 const randompick = (a) => {
     return a[Math.floor(Math.random() * a.length)]
 };
 
 
 const getWeather = () => {
+
+    document.activeElement.blur();
     city = (!input.value) ? 'Poznań' : input.value;
   
     url = apiLink + city + lang + apiKey + units ;
