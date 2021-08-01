@@ -35,6 +35,8 @@ body {
   background: rgba( 18, 18, 18, 0.3 );
   
   backdrop-filter: blur( 12.0px );
+  -webkit-backdrop-filter: blur( 12.0px );
+ 
 
   display: flex;
   flex-direction: column;
