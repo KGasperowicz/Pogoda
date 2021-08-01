@@ -50,7 +50,7 @@ body {
         width: 80%;
         min-height: 500px;
         padding: 20px 10px;
-        background: rgba( 18, 18, 18, 0.6 );
+        /* background: rgba( 18, 18, 18, 0.6 ); */
     }
     .bottom {
         font-size: 12px;
